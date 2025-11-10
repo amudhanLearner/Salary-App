@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='salary.css')}}">
+</head>
+<body>
+    <div class="result-box">
+        <h1>Predicted Salary</h1>
+        <h2>₹{{ predicted_salary}}</h2>
+        <img src="data:image/png;base64,{{ plot_url}}" alt="Sales Chart">
+    </div>
+
+</body>
+</html>
